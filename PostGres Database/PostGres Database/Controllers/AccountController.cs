@@ -86,23 +86,62 @@ namespace PostGres_Database.Controllers
             {
                 return View(model);
             }
-
+            // TODO revisit SignInManager code
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
-            switch (result)
+            //var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            bool result = true;
+
+            using (var cmd = new NpgsqlCommand())
             {
-                case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
-                case SignInStatus.LockedOut:
-                    return View("Lockout");
-                case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
-                case SignInStatus.Failure:
-                default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
-                    return View(model);
+                cmd.Connection = conn;
+                var sha1 = new SHA1CryptoServiceProvider();
+                var sha1data = sha1.ComputeHash(Encoding.UTF8.GetBytes(model.Password));
+                var hashPass = System.Text.Encoding.Default.GetString(sha1data);
+                var chArr = hashPass.ToCharArray();
+                for (int a = 0; a < chArr.Length; a++)
+                {
+                    int b = (int)chArr[a];
+                    b = b % 26 + 65;
+                    chArr[a] = (char)b;
+                }
+                hashPass = new string(chArr);
+                cmd.CommandText = $"SELECT COUNT(*) FROM users WHERE email = '{model.Email}' AND password = '{hashPass}'";
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    int count = 0;
+                    while (reader.Read())
+                    {
+                        count = reader.GetInt32(0);
+                    }
+                    //Count won't be zero if there was a duplicate in the database, and therefore we stay on the current view.
+                    // TODO make an error message corresponding with a duplicate
+                    if (count == 0)
+                    {
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                        return View(model);
+                    }
+
+                }
+
             }
+               
+            //switch (result)
+            //{
+            //    case SignInStatus.Success:
+            //        return RedirectToLocal(returnUrl);
+            //    case SignInStatus.LockedOut:
+            //        return View("Lockout");
+            //    case SignInStatus.RequiresVerification:
+            //        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+            //    case SignInStatus.Failure:
+            //    default:
+            //        ModelState.AddModelError("", "Invalid login attempt.");
+            //        return View(model);
+            //}
+
+            return RedirectToLocal(returnUrl);
         }
 
         //
