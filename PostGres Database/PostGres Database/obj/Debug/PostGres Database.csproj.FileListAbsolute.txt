@@ -1,0 +1,71 @@
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\csc.exe
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\System.Collections.Immutable.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\vbc.exe
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\VBCSCompiler.exe
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\roslyn\VBCSCompiler.exe.config
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\PostGres Database.dll.config
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\PostGres Database.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\PostGres Database.pdb
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Antlr3.Runtime.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\EntityFramework.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\EntityFramework.SqlServer.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.Google.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Web.Infrastructure.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Newtonsoft.Json.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Owin.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.Helpers.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.Mvc.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.Optimization.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.Razor.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.WebPages.Deployment.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.WebPages.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.WebPages.Razor.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\WebGrease.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.Helpers.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.Mvc.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.Optimization.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.Razor.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.WebPages.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.WebPages.Deployment.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\System.Web.WebPages.Razor.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Antlr3.Runtime.pdb
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Newtonsoft.Json.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\EntityFramework.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\EntityFramework.SqlServer.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.Google.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\obj\Debug\PostGres Database.csprojResolveAssemblyReference.cache
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\obj\Debug\PostGres Database.dll
+c:\users\michael curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\obj\Debug\PostGres Database.pdb
+C:\Users\Michael Curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Npgsql.dll
+C:\Users\Michael Curtis\documents\visual studio 2015\Projects\PostGres Database\PostGres Database\bin\Npgsql.xml
