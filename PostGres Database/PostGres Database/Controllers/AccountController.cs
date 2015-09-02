@@ -122,11 +122,10 @@ namespace PostGres_Database.Controllers
                         ModelState.AddModelError("", "Invalid login attempt.");
                         return View(model);
                     }
-
                 }
 
             }
-               
+            
             //switch (result)
             //{
             //    case SignInStatus.Success:
@@ -140,7 +139,7 @@ namespace PostGres_Database.Controllers
             //        ModelState.AddModelError("", "Invalid login attempt.");
             //        return View(model);
             //}
-
+            
             return RedirectToLocal(returnUrl);
         }
 
