@@ -12,7 +12,7 @@ using PostGres_Database.Models;
 using Npgsql;
 using System.Security.Cryptography;
 using System.Text;
-
+using PostGres_Database.Classes;
 
 /*
 SELECT *
@@ -90,7 +90,8 @@ namespace PostGres_Database.Controllers
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             //var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
-            bool result = true;
+            
+       
 
             using (var cmd = new NpgsqlCommand())
             {
@@ -99,6 +100,7 @@ namespace PostGres_Database.Controllers
                 var sha1data = sha1.ComputeHash(Encoding.UTF8.GetBytes(model.Password));
                 var hashPass = System.Text.Encoding.Default.GetString(sha1data);
                 var chArr = hashPass.ToCharArray();
+
                 for (int a = 0; a < chArr.Length; a++)
                 {
                     int b = (int)chArr[a];
@@ -123,7 +125,18 @@ namespace PostGres_Database.Controllers
                         return View(model);
                     }
                 }
-
+                cmd. CommandText = $"SELECT * FROM users WHERE email = '{model.Email}' AND password = '{hashPass}'";
+                using (var reader = cmd.ExecuteReader())
+                {
+                    
+                    while (reader.Read())
+                    {
+                        ViewBag.FirstName = reader.GetString(0);
+                        ViewBag.LastName = reader.GetString(1);
+                    }
+                    
+                }
+                LoginInfo.is_logged_in = true;
             }
             
             //switch (result)
@@ -139,8 +152,9 @@ namespace PostGres_Database.Controllers
             //        ModelState.AddModelError("", "Invalid login attempt.");
             //        return View(model);
             //}
+
             
-            return RedirectToLocal(returnUrl);
+            return View("~/Views/Home/Index.cshtml", model);
         }
 
         //
@@ -191,13 +205,11 @@ namespace PostGres_Database.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            
-            
             using (var cmd = new NpgsqlCommand())
             {
                 cmd.Connection = conn;
                 // Retrieve all rows
-                cmd.CommandText = "SELECT * FROM users";
+                cmd.CommandText = "SELECT * FROM tblusers";
                 using (var reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
@@ -224,7 +236,7 @@ namespace PostGres_Database.Controllers
                 using (var cmd = new NpgsqlCommand())
                 {
                     cmd.Connection = conn;
-                    cmd.CommandText = $"SELECT COUNT(*) FROM users WHERE email = '{model.Email}' AND first_name = '{model.FirstName}' AND last_name = '{model.LastName}'";
+                    cmd.CommandText = $"SELECT COUNT(*) FROM tblusers WHERE email = '{model.Email}' AND first_name = '{model.FirstName}' AND last_name = '{model.LastName}'";
 
                     using (var reader = cmd.ExecuteReader())
                     {

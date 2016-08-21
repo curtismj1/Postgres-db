@@ -29,5 +29,7 @@ namespace PostGres_Database.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<PostGres_Database.Models.CarModel> CarModels { get; set; }
     }
 }

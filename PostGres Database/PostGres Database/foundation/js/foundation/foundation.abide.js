@@ -14,7 +14,7 @@
       error_labels : true, // labels with a for="inputId" will recieve an `error` class
       error_class : 'error',
       timeout : 1000,
-      patterns : {
+      patterns : {http://localhost:54685/../../
         alpha : /^[a-zA-Z]+$/,
         alpha_numeric : /^[a-zA-Z0-9]+$/,
         integer : /^[-+]?\d+$/,

@@ -60,6 +60,7 @@ namespace PostGres_Database.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
+        public bool isLoggedIn = false;
     }
 
     public class RegisterViewModel

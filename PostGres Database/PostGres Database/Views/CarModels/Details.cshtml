@@ -1,0 +1,163 @@
+﻿@model PostGres_Database.Models.CarModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CarModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tbVehicle_pkey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbVehicle_pkey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WheelDrive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WheelDrive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Condition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Condition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VIN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MPGFuelRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MPGFuelRating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PriceRange)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PriceRange)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Make)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mileage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mileage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransmissionType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransmissionType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManualLatitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManualLatitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManualLongutude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManualLongutude)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
